@@ -37,11 +37,6 @@
         "resolved": "1.0.3",
         "contentHash": "AmOJZwCqnOCNp6PPcf9joyogScWLtwy0M1WkqfEQ0M9nYwyDD7EX9ZjscKS5iYnyvteX7kzSKFCKt9I9dXA6mA=="
       },
-      "Microsoft.NETFramework.ReferenceAssemblies.net461": {
-        "type": "Transitive",
-        "resolved": "1.0.3",
-        "contentHash": "AmOJZwCqnOCNp6PPcf9joyogScWLtwy0M1WkqfEQ0M9nYwyDD7EX9ZjscKS5iYnyvteX7kzSKFCKt9I9dXA6mA=="
-      },
       "System.Buffers": {
         "type": "Transitive",
         "resolved": "4.5.1",

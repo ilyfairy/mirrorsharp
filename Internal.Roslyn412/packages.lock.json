@@ -438,7 +438,6 @@
           "Microsoft.CodeAnalysis.Features": "[3.3.1, )"
         }
       }
-    },
-    ".NETStandard,Version=v2.0/linux-x64": {}
+    }
   }
 }
