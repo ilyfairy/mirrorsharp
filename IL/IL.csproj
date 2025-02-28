@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="../NuGet.Common.props" />
   
   <PropertyGroup>
@@ -15,7 +15,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <RestorePackagesWithLockFile Condition="'$(UseLocalILAsm)' == 'True'">false</RestorePackagesWithLockFile>
+    <!--<RestorePackagesWithLockFile Condition="'$(UseLocalILAsm)' == 'True'">false</RestorePackagesWithLockFile>-->
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,5 +30,17 @@
   <ItemGroup>
     <ProjectReference Condition="'$(UseLocalILAsm)' == 'True'" Include="..\..\Mobius.ILasm\Mobius.ILASM\Mobius.ILasm.csproj" />
     <ProjectReference Include="..\Common\Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeAnalysis">
+      <HintPath>..\Libraries\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.Features">
+      <HintPath>..\Libraries\Microsoft.CodeAnalysis.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata">
+      <HintPath>..\Libraries\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
