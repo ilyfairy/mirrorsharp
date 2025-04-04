@@ -95,7 +95,8 @@ namespace MirrorSharp.Internal.Roslyn {
 
         private static Assembly LoadInternalsAssemblySlow(Version roslynVersion) {
             var assemblyName = roslynVersion switch {
-                { Major: > 4 } or { Major: 4, Minor: >= 12 } => "MirrorSharp.Internal.Roslyn412.dll",
+                { Major: > 4 } or { Major: 4, Minor: >= 14 } => "MirrorSharp.Internal.Roslyn414.dll",
+                { Major: 4, Minor: 12 } => "MirrorSharp.Internal.Roslyn412.dll",
                 { Major: 4, Minor: 11 } => "MirrorSharp.Internal.Roslyn411.dll",
                 { Major: 4, Minor: 10 } => "MirrorSharp.Internal.Roslyn410.dll",
                 { Major: 4, Minor: 9 } => "MirrorSharp.Internal.Roslyn49.dll",
